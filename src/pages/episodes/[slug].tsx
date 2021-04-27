@@ -22,7 +22,6 @@ type Episode = {
   description: string;
 };
 
-
 type EpisodeProps = {
   episode: Episode;
 }
@@ -91,5 +90,4 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
     props: { episode },
     revalidate: 60 * 60 * 24, // 24 hours
   }
-
 }
